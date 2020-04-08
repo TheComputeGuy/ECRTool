@@ -40,7 +40,7 @@ def conv():
     xlsxname = filename
     month = month_entry.get()
     time = month.strip().replace(" ", "_")
-    txtfilename = dirname+"/"+time+".txt"
+    txtfilename = dirname+"\\"+time+".txt"          #Changes from *nix version to Windows
     txtfile = open(txtfilename, "a")
 
     wb = oxl.load_workbook(xlsxname, data_only=True)
